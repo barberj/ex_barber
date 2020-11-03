@@ -18,6 +18,7 @@ defmodule ExBarberWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+    resources "/clocks", ClockController, only: [:index]
   end
 
   # Other scopes may use custom stacks.
