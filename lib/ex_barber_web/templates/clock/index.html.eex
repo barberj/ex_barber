@@ -1,0 +1,2 @@
+Dashboard
+<%= live_render(@conn, ExBarberWeb.ClockLive, session: %{}) %>
